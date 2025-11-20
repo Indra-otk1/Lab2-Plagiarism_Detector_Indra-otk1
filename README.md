@@ -1,0 +1,7 @@
+Plagiarism Analyzer and Text Comparison Tool It is a simple utility in the form of a Python command that is used to compare two text files (essays) to identify similarities. PrerequisitesPython 3.xA Unix-like environment (Linux, macOS or WSL) to execute the setup script (setup.sh).Installation and setupFollow the following steps in order to establish the project environment:1. Set up Script Execute the shell script that is included to create the correct directory structure of your essays and reports.chmod +x setup.sh
+./setup.sh
+This will make 2 directories that are essential:essays/: This is where you want your input text files to be placed.reports/: That is where the final similarity report is going to be saved. Use prepared input files Put two essays to be compared in input folder: essays/essay1.txt essays/essay2.txt Use the main python file to execute the file: python3 essay-analyzer.py
+Interactive StepsThe program will be operated in the following interactive steps:Status Check: It will verify that the two essay files have been loaded successfully.Word Search: It will ask you to enter a word to view its frequency:Enter a word to search: [enter your word here].
+Output of Analysis: Shows the list of similar words and the reported finally similarity percentage:Report Save: Save similarity report (y/n):
+Output ReportShould you wish to save the report (y), the output will be saved to:reports/similarity_report.txt.
+The similar percentage and the entire list of shared words will be included in the file.
